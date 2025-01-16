@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Calcualter</title>
+</head>
+<link rel="stylesheet" href="./calaulater.css">
+<body>
+    <!--Calculater -->
+    <div class="Calcualter">
+    <form >
+        <!--text part of the calcualter-->
+        <div class="text-part">
+            <input type="text" name="display">
+        </div>
+        <!-- button part of the calcuater-->
+         <!--calculater button 1 line-->
+         <div class="div-1">
+            <input type="button" value="AC" onclick="display.value =' ' " class="opperater"> 
+            <input type="button" value="C" onclick="display.value = display.value.toString().slice(0,-1)"class="opperater"> 
+            <input type="button" value="%" onclick="display.value +='%' "class="opperater"> 
+            <input type="button" value="/" onclick="display.value +='/' "class="opperater"> 
+         </div>
+          <!--calculater button 2 line-->
+         <div class="div-2">
+            <input type="button" value="9" onclick="display.value +='9' "class="number"> 
+            <input type="button" value="8" onclick="display.value +='8' "class="number">
+            <input type="button" value="7" onclick="display.value +='7' "class="number">  
+            <input type="button" value="*" onclick="display.value +='*' "class="opperater"> 
+         </div>
+          <!--calculater button 3 line-->
+         <div class="div-3">
+            <input type="button" value="6" onclick="display.value +='6' "class="number"> 
+            <input type="button" value="5" onclick="display.value +='5' "class="number"> 
+            <input type="button" value="4" onclick="display.value +='4' "class="number"> 
+            <input type="button" value="-" onclick="display.value +='-' "class="opperater"> 
+         </div>
+          <!--calculater button 4 line-->
+         <div class="div-4">
+            <input type="button" value="3" onclick="display.value +='3' "class="number"> 
+            <input type="button" value="2" onclick="display.value +='2' "class="number"> 
+            <input type="button" value="1" onclick="display.value +='1' "class="number"> 
+            <input type="button" value="+" onclick="display.value +='+' "class="opperater"> 
+         </div>
+          <!--calculater button 5 line-->
+         <div class="div-5">
+            <input type="button" value="00" onclick="display.value +='00' "class="number"> 
+            <input type="button" value="0" onclick="display.value +='0' "class="number"> 
+            <input type="button" value="." onclick="display.value +='.' "class="opperater"> 
+            <input type="button" value="=" onclick="display.value = eval(display.value)"class="opperater"> 
+         </div>
+    </form>
+</body>
+</html>
